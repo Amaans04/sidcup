@@ -33,7 +33,7 @@ body {
   height: 20px;
   width: 20px;
   background-color: #95c11e;
-  border-radius: 50%;
+  border-radius: 50%; 
   position: fixed;
   z-index: 99;
   transition: all linear 0.3s;
@@ -439,3 +439,98 @@ video {
   line-height: 20px;
   margin-bottom: 8px;
 }
+/* Responsive Styling */
+@media screen and (max-width: 1024px) {
+  #nav {
+    padding: 0 50px;
+    gap: 30px;
+  }
+
+  #page1 h1 {
+    font-size: 6vw;
+  }
+
+  #page1 h2 {
+    font-size: 24px;
+  }
+
+  #page1 p {
+    font-size: 1rem;
+    width: 60%;
+  }
+
+  #about-us img {
+    height: 180px;
+    width: 180px;
+  }
+
+  .card {
+    width: 28%;
+  }
+
+  #footer img {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #nav {
+    padding: 0 30px;
+    gap: 20px;
+  }
+
+  #page1 h1 {
+    font-size: 5vw;
+  }
+
+  #page1 p {
+    font-size: 0.9rem;
+    width: 70%;
+  }
+
+  #about-us img {
+    height: 140px;
+    width: 140px;
+  }
+
+  .card {
+    width: 40%;
+  }
+
+  #footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #nav {
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  #page1 h1 {
+    font-size: 4.5vw;
+  }
+
+  #page1 p {
+    font-size: 0.8rem;
+    width: 90%;
+  }
+
+  #about-us img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  #footer {
+    padding: 10px;
+    gap: 10px;
+  }
+}
+
